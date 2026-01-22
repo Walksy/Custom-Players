@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "customplayers",
+	"version": "${version}",
+	"name": "Custom Players",
+	"description": "...",
+	"authors": [
+    "Walksy"
+	],
+	"contact": {
+
+	},
+	"license": "MIT",
+	"icon": "assets/walksy/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+      "walksy.customplayers.CustomPlayers"
+		],
+    "walksylib": [
+      "walksy.customplayers.config.WalksyLibIntegration"
+    ]
+	},
+	"mixins": [
+    "customplayers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": ">=17",
+		"fabric-api": "*",
+    "walksylib": ">=0.9.95"
+  }
+}
